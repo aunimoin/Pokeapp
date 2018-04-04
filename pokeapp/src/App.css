@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: url("./images/Pokeapp.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.list-container {
+  text-align: center;
+  margin-top: 50px;
+  border: 1px groove black;
+  border-radius: 10px;
+  width: 200px;
+  max-height: 400px;
+  overflow-y: scroll;
+  background-color: rgba(255, 170, 0, 0.6);
+}
+.list p {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.list p:hover {
+  background-color: #e97451;
+}
+.profile-container {
+  text-align: center;
+  margin-top: 50px;
+  border: 1px groove black;
+  border-radius: 10px;
+  width: 200px;
+  max-height: 400px;
+  background-color: rgba(255, 170, 0, 0.6);
+}
