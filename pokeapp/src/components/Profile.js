@@ -1,8 +1,9 @@
 import React from "react";
 // import PokeListItem from './PokeList-Item'
 
+// Profile is a functional component since it's outputing html
 const Profile = props => {
-  const { name, weight, abilities, sprites } = props.urlList;
+  const { name, weight, abilities, sprites } = props.poke;
   return (
     <div className="profile-container">
       <h1>Poke Profile</h1>
@@ -15,8 +16,8 @@ const Profile = props => {
       </div>
       <div className="poke-abilities">
         Abilities:{" "}
-        {abilities.map(ability => {
-          return <div key={ability.ability.name}>{ability.ability.name}</div>;
+        {abilities.map((ability, index) => {
+          return <div key={index}>{ability.ability.name}</div>;
         })}
       </div>
     </div>
